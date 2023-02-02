@@ -15,12 +15,109 @@ $header-font-family : $sans-serif-narrow;
 @import "minimal-mistakes"; // main partials
 
 
+.masthead {
+    border-bottom: 3px solid #000;
+}
+
+.page__footer {
+    border-top: 3px solid #000;
+}
+
+.sidebar {
+    opacity: 1;
+    transition: opacity 0ms;
+}
+
+.sidebar:hover {
+    opacity: 1f;
+}
+
+.author__avatar {
+    min-width: 100px;
+    width: auto;
+    height: auto;
+    img {    
+        padding: 5px;
+        border: 3px solid #000;
+        max-width: 200px;
+    }    
+}
+
+.author__content {
+    min-width: 220px;
+    vertical-align: top;
+
+    @include breakpoint($small) {
+        vertical-align: middle;
+    }
+    @include breakpoint($medium) {
+        vertical-align: middle;
+    }
+    @include breakpoint($medium-wide) {
+        vertical-align: middle;
+    }
+
+    .author__name {
+        @include breakpoint($small) {
+            font-size: 2.5em;
+        }
+        @include breakpoint($medium) {
+            font-size: 2.5em;
+        }
+        @include breakpoint($medium-wide) {
+            font-size: 2.5em;
+        }
+        @include breakpoint($large) {
+            font-size: 2em;            
+        }        
+    }
+
+    .author__bio {
+        @include breakpoint($small) {
+            font-size: 1.5em;
+        }
+        @include breakpoint($medium) {
+            font-size: 1.5em;
+        }
+        @include breakpoint($medium-wide) {
+            font-size: 1.5em;
+        }
+        @include breakpoint($large) {
+            font-size: 1.1em;
+        }        
+    }
+    
+}
+
+.author__urls-wrapper {
+    .btn--inverse {
+        font-size: xx-large;
+        border-radius: 15px;
+        border: 3px solid #000;
+        margin-left: 30px;
+    }
+}
+
+.page__inner-wrap {
+    .page__title {
+        margin-top: 1.414em;
+    }
+}
+
+.archive {
+    .page__title {
+        margin-top: 1.414em;
+    }
+}
+
 .list__item {
+    overflow: hidden;
     border-radius: 15px;
     border: 3px solid #000000;
     padding: 20px;
     margin: 30px 0px;
-    box-shadow: 10px 10px rgb(0, 0, 0);
+    box-shadow: 10px 10px 0 -3px #ccc, 10px 10px 0 0 #000;
+    //box-shadow: 10px 10px rgb(0, 0, 0);
     position: relative;
     top: 0px; 
     left: 0px;
@@ -34,12 +131,48 @@ h2 {
 margin: 0;
 }
 
-.entries-list:hover > .list__item {
-    box-shadow: 10px 10px rgb(0, 0, 0);
-}
-
 .entries-list:hover > .list__item:hover {
-    box-shadow: 15px 15px rgb(0, 0, 0);
+    box-shadow: 15px 15px 0 -3px #62BFEF, 15px 15px 0 0 #000;
     top: -5px; left: -5px;
 }
+
+.list__item {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+.archive__item {
+    padding: 20px;
+}
+
+.archive__item-excerpt {
+    margin: 0px;
+}
+
+.archive_item-noimage {
+    //idk why the borders still have holes, but hopefully this minimizes it (* ￣︿￣)
+    margin: -2px; 
+    width: 40%;
+    float: right;
+    object-fit: scale-down;
+    display: block;
+    box-sizing: content-box;
+    background-color: #edaa25;
+}
+
+.archive_item-image {
+    margin: -2px;
+    width: 40%;
+    float: right;
+    object-fit: cover;
+    display: block;
+    box-sizing: content-box;
+}
+
+
+
+
 

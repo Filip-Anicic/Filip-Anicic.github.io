@@ -28,7 +28,7 @@
     {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
   </article>
   {% if post.thumbnail %}
-  <img src="{{ post.thumbnail | relative_url }}" class="archive_item-image">
+  <img src="{{ post.thumbnail }}" class="archive_item-image">
   {% else %}
   <img src="https://agentestudio.com/uploads/post/image/69/main_how_to_design_404_page.png" class="archive_item-noimage">
   {% endif %}

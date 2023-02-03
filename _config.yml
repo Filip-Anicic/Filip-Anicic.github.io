@@ -14,6 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Filip Aničić
+masthead_title: 
 email: filip.anicic123@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
  Personal website of Filip Aničić
@@ -60,6 +61,8 @@ author:
   name   : "Filip Aničić"
   avatar : "/assets/images/bio-photo.jpg"
   bio    : "Unreal & Unity developer"
+  email  : "filip.anicic123@gmail.com"
+  home   : "/"
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
@@ -70,6 +73,9 @@ author:
 
 footer:
   links:
+    - label: "email"
+      icon: "fa-solid fa-envelope"
+      url: "filip.anicic123@gmail.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/anicic_filip"

@@ -1,0 +1,6 @@
+<div class="collapsible" style="margin-left: {{include.indent-margin | default: '0%' }};">
+  <button class="collapsible-button">{{include.title}}</button>
+  <div class="collapsible-content" style="padding: {{include.content-padding | default: '0%' }};"> 
+    {{ include.content | markdownify }}
+  </div>
+</div>

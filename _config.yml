@@ -13,6 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+url: 'https://www.filip-anicic.com'
 title: Filip Aničić
 masthead_title: 
 email: filip.anicic123@gmail.com
@@ -24,8 +25,9 @@ minimal_mistakes_skin: default
 search: true
 
 # Build settings
-host: 0.0.0.0
+host: 192.168.87.102
 markdown: kramdown
+highlighter: rouge
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
 permalink: /:categories/:title/
@@ -56,6 +58,11 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+
+after_footer_scripts:
+  - /assets/js/collapsable.js
+
+
 
 author:
   name   : "Filip Aničić"

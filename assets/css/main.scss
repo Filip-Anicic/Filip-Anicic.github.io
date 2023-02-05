@@ -53,6 +53,22 @@ $header-font-family : $sans-serif-narrow;
     transition: opacity 0ms;
 }
 
+.toc {
+    border: 3px solid #000;
+    border-radius: 10px;
+    overflow: auto;
+
+    h4, ul {
+        border-radius: 0;
+    }
+
+    .nav__title {
+        border-width: 0px 0px 3px 0px;
+            border-color: #000;
+            border-style: solid;
+    }
+}
+
 .sidebar:hover {
     opacity: 1f;
 }

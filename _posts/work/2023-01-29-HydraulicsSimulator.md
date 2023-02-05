@@ -1,10 +1,11 @@
 ---
 title: "VR Hydraulic simulator"
 last_modified_at: 2023-01-25T15:06:02-05:00
-thumbnail: assets/images/Fredericia-thumbnail.jpg
+thumbnail: assets\images\work\sde\SDE-thumbnail.png
 classes: wide
 toc: true
 toc_sticky: true
+excerpt: Virtual reality simulator of hydraulic circuitry for a vocational school’s hydraulic curriculum
 categories:
   - Work
 gallery-devices:
@@ -21,21 +22,16 @@ tags:
 ---
 
 
-Virtual reality prototype simulator of hydraulic circuitry for a vocational school’s hydraulic curriculum, 20 days of development time. Created in Unreal Engine 5, only developer, 3D modelling and texturing done by a contractor.
-
-
-# 📜 Add video
-
 ## Description
+Virtual reality prototype simulator of hydraulic circuitry, for a vocational school’s hydraulic curriculum.
 
-Summer of 2022, I was responsible for creating a prototype at PieLab for a technical vocational school, to improve their hydraulic machinery curriculum with a virtual reality training project. Though the project didn’t continue past the prototype stage, there are some interesting aspects about the project that I’d like to showcase, that I worked on.
-
-The main requirements of the first prototype was to replicate in VR, an assembly and operation of a simple hydraulic circuit, that was able to operate in a similar way to how it would operate in real life. We were provided with a simple hydraulic circuit, symbol documentation and some photos. 
+Created in Unreal Engine 5, main developer role, 3D modelling and texturing done by a contractor, 20 full days of development.
 
 The main working station was based on the same hydraulic station at the school, where they would do the assemblies and experiments of hydraulic circuits.
 
 ## Responsibilities
 
+- Project management
 - Hydraulic simulation
 - Interaction & Locomotion
     - Grabbing
@@ -43,7 +39,6 @@ The main working station was based on the same hydraulic station at the school, 
 - Level & Environment design
 
 ## Implementation
-
 ### Hydraulic simulation
 
 The simulator is based on a simple graph structure and a breath first search analysis and graph construction. The core of the system is written in C++ plugin

@@ -1,7 +1,7 @@
 ---
 title: "VR Hydraulic simulator"
 last_modified_at: 2023-01-25T15:06:02-05:00
-thumbnail: assets\images\work\sde\SDE-thumbnail.png
+thumbnail: assets/images/work/sde/SDE-thumbnail.png
 classes: wide
 toc: true
 toc_sticky: true

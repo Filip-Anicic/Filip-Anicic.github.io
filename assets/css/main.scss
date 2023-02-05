@@ -151,6 +151,17 @@ $header-font-family : $sans-serif-narrow;
     }
 }
 
+
+.mfp-container {
+    .mfp-arrow, .mfp-close {
+        outline: 0px;
+    }
+}
+
+
+
+
+
 .archive {
     .page__title {
         margin-top: 1.414em;

@@ -81,8 +81,8 @@ author:
 footer:
   links:
     - label: "email"
-      icon: "fa-solid fa-envelope"
-      url: "filip.anicic123@gmail.com"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:filip.anicic123@gmail.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/anicic_filip"
@@ -102,6 +102,17 @@ defaults:
       comments: true
       share: true
       related: true
+  # _work
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: false
+      related: false
   # _pages
   - scope:
       path: "_pages"

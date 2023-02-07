@@ -140,7 +140,7 @@ void USDESubsystem::ConstructNetworks()
 }
 ```
 {% endcapture %}
-{% include collapsible title="C++ sample" indent-margin="40px" content=code_sample %}
+{% include collapsible title="C++ sample" content=code_sample %}
 
 
 - Device implementation 

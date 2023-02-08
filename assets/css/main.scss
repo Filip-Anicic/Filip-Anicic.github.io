@@ -44,6 +44,14 @@ body {
     }
 }
 
+.search__toggle {
+    color: $text-color;
+  
+    &:hover {
+      color: mix($background-color, $text-bold-color, 25%);
+    }
+  }
+
 .page__footer {
     border-top: $border-width solid $border-color;
 }
@@ -55,6 +63,7 @@ body {
 
 .toc {
     border: 3px solid $border-color;
+    box-shadow: 4px 4px 0 0 $border-color;
     border-radius: 10px;
     overflow: auto;
 
@@ -187,8 +196,7 @@ body {
     border: $border-width solid $border-color;
     padding: 20px;
     margin: 30px 0px;
-    box-shadow: 8px 8px 0 calc(-1 * #{$border-width}) $background-color, 8px 8px 0 0 $border-color;
-    //box-shadow: 10px 10px rgb(0, 0, 0);
+    box-shadow: 4px 4px 0 calc(-1 * #{$border-width}) $border-color, 4px 4px 0 0 $border-color;
     position: relative;
     top: 0px; 
     left: 0px;
@@ -203,7 +211,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .list__item:hover, .list__item:active {
-    box-shadow: 12px 12px 0 calc(-1 * #{$border-width}) $primary-color, 12px 12px 0 0 $border-color;
+    box-shadow: 8px 8px 0 calc(-1 * #{$border-width}) $primary-color, 8px 8px 0 0 $border-color;
     top: -4px; left: -4px;
 } 
 

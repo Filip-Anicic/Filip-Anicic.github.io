@@ -29,6 +29,7 @@ tags:
 
 
 {% include video id="3xSwFyj6mxo" provider="youtube" %}
+{% include video id="0jPMiMo_6sE" provider="youtube" %}
 
 ## Description
 VR simulation of a CNC machine developed for a vocational school’s industrial technician curriculum. Created in Unity, 3 person development team.
@@ -51,15 +52,15 @@ The tutorial system presents series of tutorial steps to prepare the machine, di
 </a>
 
 - Core classes
-    - Tablet - an interactable tablet object, composed of a 3D UI canvas for the user to operate the tutorial system, as well as view the tutorial content.
-    - Tutorial Manager - a tutorial player, responsible for playing through the selected library, as well as any methods needed for a tutorial action or step
-    - Tutorial Library - main storage class of a tutorial, composed by a list of tutorial chapters.
-    - Tutorial Chapter - each chapter represents a list of tutorial steps, mainly used for separating tutorial steps, for easier organization.
-    - Tutorial Step - localized description of a task needed to be done in the tutorial, video content, as well as the individual actions that are highlighted to the user, needed to complete the task. Operates by lifetime events, called by the manager.
-    - Tutorial Action - individual action needed to be done by the user, highlights points of interest, checks points of interest to evaluate if action is done properly. Operates by lifetime events, called by the manager.
+    - ***Tablet*** - an interactable tablet object, composed of a 3D UI canvas for the user to operate the tutorial system, as well as view the tutorial content.
+    - ***Manager*** - a tutorial player, responsible for playing through the selected library, as well as any methods needed for a tutorial action or step
+    - ***Library*** - main storage class of a tutorial, composed by a list of tutorial chapters.
+    - ***Chapter*** - each chapter represents a list of tutorial steps, mainly used for separating tutorial steps, for easier organization.
 	<a href="{{site.url}}/assets/images/work/cnc/tutorial-action-methods.png" class="image-popup">
-		![1092-devenv_05-02-2023.png]({{site.url}}/assets/images/work/cnc/tutorial-action-methods.png)
+		![1092-devenv_05-02-2023.png]({{site.url}}/assets/images/work/cnc/tutorial-action-methods.png){: .align-right}
 	</a>
+    - ***Step*** - localized description of a task needed to be done in the tutorial, video content, as well as the individual actions that are highlighted to the user, needed to complete the task. Operates by lifetime events, called by the manager.
+    - ***Action*** - individual action needed to be done by the user, highlights points of interest, checks points of interest to evaluate if action is done properly. Operates by lifetime events, called by the manager.
 
 
 {% capture code_sample %}

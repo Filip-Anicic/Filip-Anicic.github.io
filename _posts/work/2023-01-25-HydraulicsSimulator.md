@@ -21,6 +21,7 @@ tags:
   - unreal 
 ---
 
+{% include video id="ZpVlcxH-QQM" provider="youtube" %}
 
 ## Description
 Virtual reality prototype simulator of hydraulic circuitry, for a vocational school’s hydraulic curriculum.
@@ -149,9 +150,9 @@ void USDESubsystem::ConstructNetworks()
     
 - Debug tooling
     
-    Debug tooling and editor scripts were made to accelerate building and testing the simulator codebase.
-    
+    Debug tooling and editor scripts were made to accelerate building and testing the simulator codebase in editor and in VR.
 	{% include video id="0c2YT3OLWrI" provider="youtube" %}
+    {% include video id="wXCZKMfzbFo" provider="youtube" %}
     
     
 
@@ -178,7 +179,7 @@ The hose drawing component works based on the VR pawn’s interaction events, ha
 A quick tutorial menu was created to introduce the user to the VR controls and how to assemble and use a simple hydraulic circuit.
 The menu consists of a introduction message, VR controller button scheme and video tutorials for locomotion, interaction and the assembly of a simple hydraulic circuit.  
 
-
+{% include video id="ZD8Cblas0zg" provider="youtube" %}
 
 #### Drawing hoses
 

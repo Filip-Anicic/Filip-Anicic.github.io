@@ -1,0 +1,7 @@
+<figure class="{{ include.class }}">
+    {% include video id={{include.videoLeft}} provider={{include.provider}} %}
+    {% include video id={{include.videoRight}} provider={{include.provider}} %}
+    {% if include.caption %}
+        <figcaption>{{ include.caption | markdownify | remove: "<p>" | remove: "</p>" }}</figcaption>
+    {% endif %}
+</figure>

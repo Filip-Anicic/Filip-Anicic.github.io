@@ -1,0 +1,25 @@
+<!-- {% if include.header.teaser %}
+  {% capture teaser %}{{ include.header.teaser }}{% endcapture %}
+{% else %}
+  {% assign teaser = site.teaser %}
+{% endif %} -->
+
+{% assign title = include.title %}
+
+
+
+<div class="{{ include.type | default: 'list' }}__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      <a href="{{ include.url }}" rel="permalink">{{ title }}</a>
+    </h2>
+    {% if include.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ include.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
+  </article>
+  {% if include.thumbnail %}
+  <img src="{{ include.thumbnail }}" class="archive_item-image">
+  {% elsif include.thumbnailLocal %}
+  <img src="{{ include.thumbnailLocal | relative_url }}" class="archive_item-image">
+  {% else %}
+  <img src="https://agentestudio.com/uploads/post/image/69/main_how_to_design_404_page.png" class="archive_item-noimage">
+  {% endif %}
+</div>

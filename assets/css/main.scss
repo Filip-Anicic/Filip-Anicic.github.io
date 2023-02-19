@@ -61,6 +61,12 @@ body {
     transition: opacity 0ms;
 }
 
+
+.page__title {
+    color: $text-bold-color;
+    margin-bottom: 2em;
+}
+
 .toc {
     border: 3px solid $border-color;
     box-shadow: 4px 4px 0 0 $border-color;

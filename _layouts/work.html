@@ -7,7 +7,7 @@ classes: wide
 
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
-<section id="work" class="taxonomy__section">
+<section href=#work id="work" class="taxonomy__section">
   <div class="entries-{{ entries_layout }}">
     <h1 itemprop="headline">Work</h2>
     {% for post in site.categories.Work %}
@@ -16,7 +16,7 @@ classes: wide
   </div>
   <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
 </section>
-<section id="personal" class="taxonomy__section">
+<section href=#personal id="personal" class="taxonomy__section">
   <div class="entries-{{ entries_layout }}">
     <h1 color=$text-color itemprop="headline">Personal</h2>
     {% for post in site.categories.Personal %}

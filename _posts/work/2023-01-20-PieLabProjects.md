@@ -5,7 +5,7 @@ categories:
   - Work
 tags:
   - link
-  - Post Formats
+  - pielab
 link: https://www.pielab.dk/projects/
 ---
 

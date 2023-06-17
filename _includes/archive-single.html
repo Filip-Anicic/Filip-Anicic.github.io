@@ -19,7 +19,7 @@
     {% endif %}
     <h2 class="archive__item-title no_toc" itemprop="headline">
       {% if post.link %}
-        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ post.url | relative_url }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ post.link }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       {% else %}
         <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
       {% endif %}
@@ -28,7 +28,9 @@
     {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
   </article>
   {% if post.thumbnail %}
-  <img src="{{ post.thumbnail | relative_url }}" class="archive_item-image">
+    <!-- {% if post.link %}<a href="{{post.link}}" class="archive_item-image">{% endif %} -->
+      <img src="{{ post.thumbnail | relative_url }}" class="archive_item-image">
+    <!-- {% if post.link %}</a>{% endif %} -->
   {% else %}
   <img src="https://agentestudio.com/uploads/post/image/69/main_how_to_design_404_page.png" class="archive_item-noimage">
   {% endif %}
